@@ -1,3 +1,4 @@
+using APIPostac.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -17,6 +18,11 @@ namespace APIPostac
     {
         public Startup(IConfiguration configuration)
         {
+            Kontekst db = new Kontekst();
+            db.Database.EnsureCreated();
+            db.SaveChanges();
+            db.Players.Add(new Player() { name = "Nowak" });
+            db.SaveChanges();
             Configuration = configuration;
         }
 
