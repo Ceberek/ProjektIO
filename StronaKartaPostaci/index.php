@@ -52,6 +52,7 @@
 		<li><input class="pass" type="number" align="center" name="przywodztwo" placeholder="Przywództwo"></li>
 		<li><input class="pass" type="number" align="center" name="handel" placeholder="Handel"></li>
 		</ul>
+
 	<input type="submit" value="Utwórz Postać" name="rejestruj" style="margin-top: 8%;" class="submit" align="center">
 	</form>
 </div>
