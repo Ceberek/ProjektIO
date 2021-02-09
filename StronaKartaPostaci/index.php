@@ -12,7 +12,7 @@
 
 	<form class="formularz-tworzeniepostaci" method="POST" action="tworzenie-postaci.php" style="text-align:center; padding-top:2%;">
 		
-	
+	<input type="submit" value="Utwórz Postać" name="rejestruj" style="margin-top: 8%;" class="submit" align="center">
 	</form>
 </div>
 
