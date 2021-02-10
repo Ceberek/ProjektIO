@@ -8,7 +8,7 @@
 <body>
 <div class = "container" style="text-align: center">
 <header>
-	<a class="menu-gora"> Kreator Postaci </a>	
+	<a class="tytul"> Kreator Postaci </a>	
 
 	<nav>
 		<a href="#" class="menu-gora">
@@ -25,6 +25,7 @@
 		</ul>
 		<br>
 		<h1><b>Atrybuty:</b></h1>
+		Masz do wydania 20pkt.
 		<ul class="lista" style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="sila" placeholder="Siła"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="zrecznosc" placeholder="Zręczność"></li>
@@ -34,7 +35,11 @@
 		<br>
 </section>
 <section class="umiejki">
-		<h2><b>Umiejętności:</b></h2><br><br>
+		<h2><b>Umiejętności:</b></h2>
+		Masz do wydania 10pkt
+		<br>
+		<br>
+		
 		<p>Związane z siłą:</p>
 		<ul style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="wytrzymalosc" placeholder="Wytrzymałość"></li>
