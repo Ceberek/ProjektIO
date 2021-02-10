@@ -1,34 +1,41 @@
 
 <html>
 <head>
-
+<title>Kreator Postaci</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 
-<body style="background-color: #ffffff;">
-<div style="text-align: center">
+<body>
+<div class = "container" style="text-align: center">
+<header>
+	<a class="menu-gora"> Kreator Postaci </a>	
 
-
-
-
+	<nav>
+		<a href="#" class="menu-gora">
+			Powrót
+		</a> 
+	</nav>
+</header>
 	<form class="formularz-tworzeniepostaci" method="POST" action="tworzenie-postaci.php" style="text-align:center; padding-top:2%;">
 		
-
-		<b>Imię i Nazwisko Bohatera:</b>
-		<ul style="list-style-type:none;">	
+<section>
+		<h1><b>	 Imię i Nazwisko Bohatera:</b></h1>
+		<ul class="lista" style="list-style-type:none;">	
 		<li><input class="pass" type="text" align="center" name="imie" placeholder="Imię i Nazwisko"></li>
 		</ul>
 		<br>
-		<b>Atrybuty:</b>
-		<ul style="list-style-type:none;">
+		<h1><b>Atrybuty:</b></h1>
+		<ul class="lista" style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="sila" placeholder="Siła"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="zrecznosc" placeholder="Zręczność"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="inteligencja" placeholder="Inteligencja"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="charyzma" placeholder="Charyzma"></li>
 		</ul>
 		<br>
-
-		<b>Umiejętności:</b><br><br>
-		Związane z siłą:
+</section>
+<section class="umiejki">
+		<h2><b>Umiejętności:</b></h2><br><br>
+		<p>Związane z siłą:</p>
 		<ul style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="wytrzymalosc" placeholder="Wytrzymałość"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="cios" placeholder="Siła ciosu"></li>
@@ -36,7 +43,7 @@
 		</ul>
 
 		<br>
-		Związane ze zręcznością:
+		<p>Związane ze zręcznością:</p>
 		<ul style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="szermierka" placeholder="Szermierka"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="jezdziectwo" placeholder="Jeździectwo"></li>
@@ -44,7 +51,7 @@
 		</ul>
 
 		<br>
-		Związane z inteligencją:
+		<p>Związane z inteligencją:</p>
 		<ul style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="taktyka" placeholder="Taktyka"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="nawigacja" placeholder="Nawigacja"></li>
@@ -52,13 +59,13 @@
 		</ul>
 
 		<br>
-		Związane z charyzmą:
+		<p>Związane z charyzmą:</p>
 		<ul style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="perswazja" placeholder="Perswazja"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="przywodztwo" placeholder="Przywództwo"></li>
 		<li><input class="pass" type="number" min="0" align="center" name="handel" placeholder="Handel"></li>
 		</ul>
-
+</section>
 	<input type="submit" value="Utwórz Postać" name="rejestruj" style="margin-top: 8%;" class="submit" align="center">
 	</form>
 </div>

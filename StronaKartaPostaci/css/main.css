@@ -1,0 +1,30 @@
+body {
+	magin:0;
+	background-color: rgb(63,152,137);
+	color:white;
+	font-family:'Monteserrat', sans-serif;
+}
+
+.menu-gora{
+
+}
+
+
+.container{
+	background-color: rgb(25,25,25);
+	text-align:center;
+	width:1000px;
+	padding:50px;
+	margin-left:auto;
+	margin-right:auto;		
+}
+
+.umiejki{
+	background-color: rgb(50,50,50);
+	text-align:center;
+	
+	padding:40px;
+	margin-left:auto;
+	margin-right:auto;	
+
+}
