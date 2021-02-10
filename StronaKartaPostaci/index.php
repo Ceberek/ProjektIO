@@ -12,6 +12,12 @@
 
 	<form class="formularz-tworzeniepostaci" method="POST" action="tworzenie-postaci.php" style="text-align:center; padding-top:2%;">
 		
+
+		<b>Imię i Nazwisko Bohatera:</b>
+		<ul style="list-style-type:none;">	
+		<li><input class="pass" type="text" align="center" name="imie" placeholder="Imię i Nazwisko"></li>
+		</ul>
+		<br>
 		<b>Atrybuty:</b>
 		<ul style="list-style-type:none;">
 		<li><input class="pass" type="number" min="0" align="center" name="sila" placeholder="Siła"></li>
