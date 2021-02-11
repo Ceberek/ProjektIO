@@ -3,6 +3,22 @@
 <head>
 <title>Kreator Postaci</title>
 <link rel="stylesheet" href="css/main.css">
+
+
+<script>
+
+var iloscPkt = 20;
+function max20()
+{
+var s = document.getElementById("sil").value;
+var z = document.getElementById("zre").value;
+var i = document.getElementById("int").value;
+var c = document.getElementById("cha").value;
+iloscPkt=20-s-z-i-c;
+document.getElementById("pkt").innerHTML="Siła: "+s+" Zręczność: "+z+" Inteligencja: "+i+" Charyzma: "+c+" Ogółem: "+iloscPkt;
+}
+</script>
+
 </head>
 
 <body>
@@ -25,15 +41,22 @@
 		</ul>
 		<br>
 		<h1><b>Atrybuty:</b></h1>
-		Masz do wydania 20pkt.
-		<ul class="lista" style="list-style-type:none;">
-		<li><input class="pass" type="number" min="0" align="center" name="sila" placeholder="Siła"></li>
-		<li><input class="pass" type="number" min="0" align="center" name="zrecznosc" placeholder="Zręczność"></li>
-		<li><input class="pass" type="number" min="0" align="center" name="inteligencja" placeholder="Inteligencja"></li>
-		<li><input class="pass" type="number" min="0" align="center" name="charyzma" placeholder="Charyzma"></li>
+		Masz do wydania następującą ilość punków:<div id="pkt"></div>
+		
+		<ul  class="lista" onchange="max20()" style="list-style-type:none;">
+		<li><input class="pass" type="number"  min="0" align="center" name="sila" placeholder="Siła" id="sil"></li>
+		<li><input class="pass" type="number"  min="0" align="center" name="zrecznosc" placeholder="Zręczność" id="zre"></li>
+		<li><input class="pass" type="number"  min="0" align="center" name="inteligencja" placeholder="Inteligencja" id="int"></li>
+		<li><input class="pass" type="number"  min="0" align="center" name="charyzma" placeholder="Charyzma" id="cha"></li>
 		</ul>
+		
+		<script type="text/javascript">
+			document.getElementById("pkt").innerHTML=iloscPkt;
+		</script>
 		<br>
 </section>
+
+
 <section class="umiejki">
 		<h2><b>Umiejętności:</b></h2>
 		Masz do wydania 10pkt
