@@ -89,7 +89,7 @@ document.getElementById("pktUmiejCha").innerHTML=sumCha;
 	<a class="tytul"> Kreator Postaci </a>	
 
 	<nav>
-		<a href="#" class="menu-gora">
+		<a href="http://www.projektzio.cba.pl/?fbclid=IwAR0ep6_GdwmzcT7We3_fAQ_IKKHQ_c_FoI5Z7eANH6gYly-ayfvRs68jxrY" class="menu-gora">
 			Powrót
 		</a> 
 	</nav>
