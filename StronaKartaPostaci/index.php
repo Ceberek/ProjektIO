@@ -14,7 +14,7 @@ var s = document.getElementById("sil").value;
 var z = document.getElementById("zre").value;
 var i = document.getElementById("int").value;
 var c = document.getElementById("cha").value;
-iloscPkt=20-s-z-i-c;
+iloscPkt=10-s-z-i-c;
 document.getElementById("pkt").innerHTML="Siła: "+s+" Zręczność: "+z+" Inteligencja: "+i+" Charyzma: "+c+" Nieprzydzielone: "+iloscPkt;
 }
 
@@ -28,7 +28,10 @@ var luczn = document.getElementById("lu").value;
 
 var sumSil=Math.abs(0-wytrz-cios-luczn);
 
+iloscPktUmiej=iloscPktUmiej-sumSil;
+
 document.getElementById("pktUmiejSil").innerHTML=sumSil;
+
 }
 
 function max10zre()
@@ -40,17 +43,25 @@ var opatr = document.getElementById("op").value;
 
 var sumZre=Math.abs(0-szerm-jezdz-opatr);
 
+iloscPktUmiej=iloscPktUmiej-sumZre;
+
 document.getElementById("pktUmiejZre").innerHTML=sumZre;
+
 }
+
 function max10int()
 {
 
 var taktyk = document.getElementById("ta").value;
-var naiwg = document.getElementById("na").value;
+var nawig = document.getElementById("na").value;
 var inzyn = document.getElementById("in").value;
 
-var sumInt = taktyk+naiwg+inzyn;
-// iloscPktUmiej=10-szerm-jezdz-opatr;
+var sumInt=Math.abs(0-taktyk-nawig-inzyn);
+
+iloscPktUmiej=iloscPktUmiej-sumInt;
+
+document.getElementById("pktUmiejInt").innerHTML=sumInt;
+
 }
 function max10cha()
 {
@@ -59,15 +70,15 @@ var pers = document.getElementById("pe").value;
 var przyw = document.getElementById("pr").value;
 var hand = document.getElementById("ha").value;
 
-var sumCha = pers+przyw+hand;
-// iloscPktUmiej=10-szerm-jezdz-opatr;
+var sumCha=Math.abs(0-pers-przyw-hand);
+
+iloscPktUmiej=iloscPktUmiej-sumCha;
+
+document.getElementById("pktUmiejCha").innerHTML=sumCha;
+
 }
-function sumWszys()
-{
-var sumaWszystkich=sumSil+sumZre+sumInt+sumCha;
-iloscPktUmiej=iloscPktUmiej-sumaWszystkich;
-document.getElementById("pktUmiej").innerHTML=iloscPktUmiej;
-}
+
+
 </script>
 
 </head>
@@ -110,7 +121,7 @@ document.getElementById("pktUmiej").innerHTML=iloscPktUmiej;
 
 <section class="umiejki">
 		<h2><b>Umiejętności:</b></h2>
-		Masz do wydania <div id="pktUmiej"></div>
+		Masz do wydania: <div id="pktUm"></div>
 		<br>
 		<br>
 		
@@ -145,6 +156,9 @@ document.getElementById("pktUmiej").innerHTML=iloscPktUmiej;
 		<li><input class="pass" type="number" min="0" align="center" name="handel" placeholder="Handel" id="ha"></li>
 		</ul>
 		
+		<script type="text/javascript">
+			document.getElementById("pktUm").innerHTML=iloscPktUmiej;
+		</script>
 		
 </section>
 	<input type="submit" value="Utwórz Postać" name="rejestruj" style="margin-top: 8%;" class="submit" align="center">
