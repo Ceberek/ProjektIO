@@ -28,10 +28,10 @@ var luczn = document.getElementById("lu").value;
 
 var sumSil=Math.abs(0-wytrz-cios-luczn);
 
-iloscPktUmiej=iloscPktUmiej-sumSil;
+iloscPktUmiej=iloscPktUmiej-1;
 
-document.getElementById("pktUmiejSil").innerHTML=sumSil;
-
+document.getElementById("pktUmiejSil").innerHTML="Wytrzymałość: "+wytrz+" Siła Ciosu: "+cios+" Łucznictwo: "+luczn+" Suma: "+sumSil;
+document.getElementById("pktUm").innerHTML=iloscPktUmiej;
 }
 
 function max10zre()
@@ -43,10 +43,10 @@ var opatr = document.getElementById("op").value;
 
 var sumZre=Math.abs(0-szerm-jezdz-opatr);
 
-iloscPktUmiej=iloscPktUmiej-sumZre;
+iloscPktUmiej=iloscPktUmiej-1;
 
-document.getElementById("pktUmiejZre").innerHTML=sumZre;
-
+document.getElementById("pktUmiejZre").innerHTML="Szermierka: "+szerm+" Jeździectwo: "+jezdz+" Opatrywanie ran: "+opatr+" Suma: "+sumZre;
+document.getElementById("pktUm").innerHTML=iloscPktUmiej;
 }
 
 function max10int()
@@ -58,10 +58,10 @@ var inzyn = document.getElementById("in").value;
 
 var sumInt=Math.abs(0-taktyk-nawig-inzyn);
 
-iloscPktUmiej=iloscPktUmiej-sumInt;
+iloscPktUmiej=iloscPktUmiej-1;
 
-document.getElementById("pktUmiejInt").innerHTML=sumInt;
-
+document.getElementById("pktUmiejInt").innerHTML="Taktyka: "+taktyk+" Nawigacja: "+nawig+" Inżynieria: "+inzyn+" Suma: "+sumInt;
+document.getElementById("pktUm").innerHTML=iloscPktUmiej;
 }
 function max10cha()
 {
@@ -72,10 +72,10 @@ var hand = document.getElementById("ha").value;
 
 var sumCha=Math.abs(0-pers-przyw-hand);
 
-iloscPktUmiej=iloscPktUmiej-sumCha;
+iloscPktUmiej=iloscPktUmiej-1;
 
-document.getElementById("pktUmiejCha").innerHTML=sumCha;
-
+document.getElementById("pktUmiejCha").innerHTML="Perswazja: "pers+" Przywództwo: "+przyw+" Handel: "+hand+" Suma: "+sumCha;
+document.getElementById("pktUm").innerHTML=iloscPktUmiej;
 }
 
 
@@ -121,7 +121,7 @@ document.getElementById("pktUmiejCha").innerHTML=sumCha;
 
 <section class="umiejki">
 		<h2><b>Umiejętności:</b></h2>
-		Masz do wydania: <div id="pktUm"></div>
+		Masz do wydania następującą ilość punków: <div id="pktUm"></div>
 		<br>
 		<br>
 		
