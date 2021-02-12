@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect('localhost', 'kowalczykmaciej', 'Qweasd123098','Postacie' ) or die('Brak połączenia z serwerem MySQL.');
+$con = mysqli_connect('localhost', 'kowalczykmaciej', 'Qweasd123098','kowalczykmaciej' ) or die('Brak połączenia z serwerem MySQL.');
 $imie = $_POST['imie'];
 
 $sila = $_POST['sila'];
