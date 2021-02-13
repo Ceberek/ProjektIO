@@ -7,13 +7,11 @@
 
 <script>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") 
-{
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $imieBohatera = test_input($_POST["imie"]);
 }
 
-function test_input($data) 
-{
+function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
