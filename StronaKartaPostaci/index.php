@@ -7,19 +7,6 @@
 
 <script>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $imieBohatera = test_input($_POST["imie"]);
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  $data = preg_replace('/[^\p{L}\p{N}\s]/u', '', $data);
-  return $data;
-}
-
-
 var iloscPkt = 20;
 function max20()
 {
@@ -174,7 +161,7 @@ document.getElementById("pktUm").innerHTML=iloscPktUmiej;
 		</script>
 		
 </section>
-	<input type="submit" value="Utwórz Postać" name="rejestruj" style="margin-top: 8%;" class="submit" align="center" href="http://www.projektzio.cba.pl/?fbclid=IwAR0ep6_GdwmzcT7We3_fAQ_IKKHQ_c_FoI5Z7eANH6gYly-ayfvRs68jxrY" class="menu-gora">
+	<input type="submit" value="Utwórz Postać" name="rejestruj" style="margin-top: 8%;" class="submit" align="center">
 	</form>
 </div>
 
