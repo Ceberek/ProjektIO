@@ -7,6 +7,20 @@
 
 <script>
 
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+  $imieBohatera = test_input($_POST["imie"]);
+}
+
+function test_input($data)
+{
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  $data = preg_replace('£$%^&*()}{@#~?><>,@|\-=-_+-¬', '', $data);
+  return $data;
+}
+
 var iloscPkt = 20;
 function max20()
 {
