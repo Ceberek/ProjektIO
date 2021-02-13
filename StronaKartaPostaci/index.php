@@ -15,7 +15,7 @@ function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
-  $data = preg_replace('/[^\p{L}\p{N}\s]/u', '', $data);
+  $data = preg_replace('£$%^&*()}{@#~?><>,@|\-=-_+-¬', '', $data);
   return $data;
 }
 
